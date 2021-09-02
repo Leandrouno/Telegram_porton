@@ -96,7 +96,7 @@ void movimiento(){
     Serial.print("millis : ");
     Serial.println(milisanteriores);
     BanderaSensor = 1;
-    milisanteriores = millis() / 1000 + 10;
+    milisanteriores = millis() / 1000 + 180;
     delay(1500);
 
   }
