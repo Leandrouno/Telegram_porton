@@ -11,8 +11,8 @@ boolean activo = true;
 String pc = "<- El porton esta cerrado ->";
 String ssid = "";
 String pass = "";
-String token = "566903986:AAEs-5oiAimxg5HJXgbV_WuJjSoTXmTzLtM";
-long id = 590173240; //chat_id sin comillas
+String token = "";
+long id = ; //chat_id sin comillas
 
 int BanderaSensor = 0;
 volatile bool BanderaPortonAbierto = false;
