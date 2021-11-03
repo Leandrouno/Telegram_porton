@@ -24,7 +24,6 @@ void setup(){
   pinMode(SENSOR_PIN, INPUT_PULLUP);
   pinMode(LED_BUILTIN, OUTPUT);
 
-  //attachInterrupt(SENSOR_PIN, Movimiento,CHANGE);
   attachInterrupt(digitalPinToInterrupt(SENSOR_PIN), movimiento, CHANGE);
 
   myBot.wifiConnect(ssid, pass);
@@ -100,9 +99,8 @@ void movimiento(){
     Serial.println(milisanteriores);
     BanderaSensor = 1;
     milisanteriores = millis() / 1000 + 180;
-    //delay(1500);
-
   }
+  
   if (sensor == HIGH) {
 
     BanderaPortonAbierto = true;
