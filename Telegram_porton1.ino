@@ -87,7 +87,7 @@ void loop(){
 
 } //FIN LOOP
 
-void movimiento(){
+ICACHE_RAM_ATTR void movimiento(){
   int sensor = digitalRead(SENSOR_PIN);
   if (sensor == HIGH && BanderaSensor == 0){
 
